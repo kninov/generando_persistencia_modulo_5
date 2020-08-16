@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include android:id="@+id/miActionBarFavoritos"
+        layout="@layout/act_favoritos"> </include>
+
+    <TextView
+        android:id="@+id/txtvContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:text="@string/tvdatos_contacto"
+
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp">
+        <EditText
+            android:id="@+id/et_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nombre"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_gmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginLeft="20dp">
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/et_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_gmail"
+            android:inputType="textEmailAddress"
+            android:autofillHints="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_DescripciónContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="310dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp">
+        <EditText
+            android:inputType="textMultiLine"
+            android:id="@+id/et_text"
+            android:lines="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/mensaje"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="173dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/til_DescripciónContacto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/color_rojo"
+        android:text="@string/btnEnviarComentario"
+
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

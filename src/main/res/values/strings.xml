@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">Mi_Mascota</string>
+    <color name="colorBlanco">#FFFFFF</color>
+
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acerca">Acerca de</string>
+
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_gmail">Email</string>
+    <string name="mensaje">Mensaje </string>
+    <string name="btnEnviarComentario">Enviar </string>
+    <string name="tvdatos_contacto">Datos de Contacto</string>
+
+    <string name="txtv_bionombre">kevin niño</string>
+    <string name="tv_biotitulo">estudiante de ing de sistemas</string>
+    <string name="tv_biodescripcion"> naci en lambayeque
+    me gusta la programacion por eso estoy aqui </string>
+
+
+
+
+</resources>
